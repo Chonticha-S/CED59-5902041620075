@@ -14,7 +14,7 @@ class m190919_075433_create_subject_table extends Migration
     {
         $this->createTable('{{%subject}}', [
             'id' => $this->primaryKey(),
-            'name' => $this->string(256)->notNull,
+            'name' => $this->string(256)->notNull(),
             'detail' => $this->text()
         ]);
     }

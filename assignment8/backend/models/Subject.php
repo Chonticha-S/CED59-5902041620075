@@ -13,4 +13,10 @@ class Subject extends \common\models\Subject
             BlameableBehavior::class
         ];
     }
+    public function rules(){
+        return [
+            ['name', 'required', 'message' => 'เสียใจด้วย คุณไม่ได้ไปต่อ!!'],
+            ['name', 'email', 'message'=> 'กรุณากรอกอีเมล์เด้อ!!']
+        ];
+    }
 }
